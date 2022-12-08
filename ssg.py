@@ -6,9 +6,7 @@ def main(source="content",dest="dist"):
             "source": source
             "dest": dest
     }
-
-    site = Site(**config).build()
-
+    Site(**config).build()
 
 if __name__=='__main__':
     typer.run(main)
